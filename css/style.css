@@ -2,91 +2,14 @@
     html {
         height: 100%;
     }
+
+    body{
+        font-family: 'Tenali Ramakrishna', sans-serif;
+        font-family: 'Zilla Slab', serif;
+    }
 }
 
 
-h1{
-    text-align: center;
-    color: mediumslateblue;
-}
-
-h2{
-    color: darkslateblue;
-}
-
-h3{
-    text-align: center;
-}
-
-/*-*-*-*-*-*-*-* PARA LA PÁGINA INDEX *-*-*-*-*-*-*-*/
-.contenedor-presentacion-img{
-    display: flex;
-    width: 500px;
-    height: 500px;
-}
-
-/*Me va a ayudar a maquetar Flexbox*/
-
-.contenedor-descripcion {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-/*-*-*-*-*-*-*-* PARA LA PÁGINA SOBRE MÍ *-*-*-*-*-*-*-*/
-
-
-/*Me va a ayudar a maquetar Flexbox*/
-
-.contenedor-sobremi {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-
-.contenedor-sobremi-img{
-    display: flex;
-    width: 500px;
-    height: 500px;
-}
-
-.contenedor-descripcion-sobremi{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: justify;
-    width: 500px;
-    height: 300px;
-    border: 2px solid gray;
-    padding: 15px;
-    margin: 2px 78px 0 16px;
-
-}
-
-
-/*-*-*-*-*-*-*-* PARA LA PÁGINA TOP5PELÍCULAS *-*-*-*-*-*-*-*/
-#titulos-peliculas{
-    text-align: center;
-}
-.contenedor-Top5{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-
-.Top5 {
-    border: 2px solid gray;
-    /*Es lo mismo que
-    border-with: 2px;
-    border-style: solid;
-    border-color: gray;
-    */
-    /*Para espacio interno Padding*/
-    padding: 15px;
-}
 
 
 footer{
