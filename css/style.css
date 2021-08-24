@@ -1,30 +1,28 @@
-@media (max-width: 700px) {
-    html {
-        height: 100%;
-    }
-
-    body{
-        font-family: 'Tenali Ramakrishna', sans-serif;
-        font-family: 'Zilla Slab', serif;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
 
-
-
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    text-align: center;
+    font-family: 'Zilla Slab', serif;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
 }
 
-/*PROBLEMAS A RESOLVER:
-- Cuándo creo un CSS tengo que crear de acuerdo al html que exite? es Decir si tengo un index.html también  debe existir un index.css?
-- Puedo poner un estilo propio? O debo seguir la idea del trabajo propuesto?
-  Tener en cuenta que entre en una pantalla revisar la parte ultima del video @media
-- Cómo puedo poner las imágenes con un mismo ancho y alto?
-  Mejor ponerlo en CSS
-*/
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%),
+    url("../img/portadaProject.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}

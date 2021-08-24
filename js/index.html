@@ -6,7 +6,7 @@
     <!-- Sirve para que la página web se vea mejor en móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Para un external CSS-->
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&family=Zilla+Slab:ital,wght@0,300;0,500;0,600;1,300&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <body>
 
-    <header class="header" id="inicio">
+    <header class="header" id="home">
         <img src="/img/menu.svg" alt="Menú Navegación" class="menu">
         <!--Menú navegación-->
         <nav class="menu-navegation">
@@ -25,7 +25,7 @@
             <a href="#skills">Habilidades</a>
             <a href="#contactMe">Contacto</a>
         </nav>
-        <div class="container-head">
+        <div class="container head">
             <h1>Hola mundo! I'm {Pamela}</h1>
         </div>
     </header>
@@ -34,16 +34,16 @@
     <main>
         <section class="aboutMe container" id="aboutMe">
             <h2 class="subtitle">Acerca de mí</h2>
-            <div class="aboutMe-contenedor">
+            <div class="aboutMe-container">
                 <img src="/img/aboutMe.svg" alt="Acerca de mí" class="aboutMe">
                 <div class="descriptionAboutMe"></div>
             </div>
         </section>
 
-        <section class="projects container" id="projects">
-            <div class="project-container">
+        <section class="projects container " id="projects">
+            <div class="container">
                 <h2 class="subtitle">Proyectos</h2>
-                <div class="container">
+                <div class="container-project">
                     <img src="/img/Checklist_Isometric.svg" alt="To Do List" class="imgProjects">
                     <img src="/img/Javascript_Isometric.svg" alt="Generador de Memes" class="imgProjects">
                     <img src="/img/CSS_Isometric.svg" alt="Sweet Scroll" class="imgProjects">
@@ -56,22 +56,22 @@
             <img src="" alt="" class="addImg">
         </section>-->
 
-        <section class="abilities container">
+        <section class="container" id="skills">
             <h2 class="subtitle">Habilidades</h2>
             <section class="abilities">
-                <div class="abilities">
+                <div class="container-abilities">
                     <img src="/img/html-1.svg" alt="HTML" class="htmlAbilities">
                     <h3 class="n-abilities">HTML</h3>
                 </div>
-                <div class="abilities">
+                <div class="container-abilities">
                     <img src="/img/css-3.svg" alt="CSS" class="cssAbilities">
                     <h3 class="n-abilities">CSS</h3>
                 </div>
-                <div class="abilities">
+                <div class="container-abilities">
                     <img src="/img/javascript-1.svg" alt="JAVASCRIPT" class="javascriptAbilities">
                     <h3 class="n-abilities">JAVASCRIPT</h3>
                 </div>
-                <div class="abilities">
+                <div class="container-abilities">
                     <img src="/img/git-icon.svg" alt="GIT" class="gitAbilities">
                     <h3 class="n-abilities">GIT</h3>
                 </div>
@@ -80,18 +80,28 @@
 
     </main>
 
-    <img clas="bxl-Twitter" src="/img/twitter.svg" alt="Twitter">
-    <img clas="bxl-Telegram" src="/img/telegram.svg" alt="Telegram">
-    <img clas="bxl-linkedin" src="/img/linkedin.svg" alt="Linkedin">
 
-
-    <footer class="footer">
-        <div class="">
-
+    <footer id="contactMe">
+        <div class="container footer-content">
+            <div class="contactMe">
+                <a>Desarrollado con 💜 por Pamela @2021 </a>
+            </div>
         </div>
-        <a>Desarrollado con 💜 por Pamela @2021 </a>
-
+        <div class="social-media">
+            <a href="" class="social-media-icon">
+                <img clas="bxl-Twitter" src="/img/twitter-4.svg" alt="Twitter">
+            </a>
+            <a href="" class="social-media-icon">
+                <img clas="bxl-Telegram" src="/img/telegram.svg" alt="Telegram">
+            </a>
+            <a href="" class="social-media-icon">
+                <img clas="bxl-linkedin" src="/img/linkedin.svg" alt="Linkedin">
+            </a>
+        </div>
     </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 
 </html>
