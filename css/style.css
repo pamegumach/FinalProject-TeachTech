@@ -177,8 +177,7 @@
 
     footer{
         background: #9f8ad0;
-        padding-bottom: 30px;
-
+        padding-bottom: 0.1px;
     }
 
     .footer-content{
@@ -186,15 +185,14 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding-top: 60px;
-        padding-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 0.1px;
 
     }
 
     .contactMe{
-        width: 100%;
+        width: 40%;
         color: #fff;
-        text-align: center;
     }
 
     .brand{
@@ -202,12 +200,17 @@
         font-size: 25px;
 
     }
-
+    .brand+p{
+        font-weight: 500;
+    }
 
     .social-media{
         width: 80%;
         display: flex;
         justify-content: flex-end;
+        margin: 0 auto;
+        padding: 20px;
+
     }
 
     .social-media-icon{
@@ -218,7 +221,8 @@
         border: 1px solid #fff;
         border-radius: 50%;
         text-align: center;
-        color: #ffffff;
+        color: #fff;
+
     }
 
     .social-media a{
@@ -241,12 +245,30 @@
         color: #764ba2;
     }
 
+    .download-file{
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        border-radius: 6px;
+        border: 1px solid #fff;
+        color: rgba(255, 207, 246, 0.83);
+        margin: 20px;
+
+    }
+    .download-file:hover{
+        background: rgb(243, 229, 229);
+        color: #764ba2;
+    }
+
+
+
     @media screen and (max-width: 800px){
         .menu-navegation{
             width: 50vw;
         }
 
-        .titulo{
+        .title{
             font-size: 40px;
         }
 
