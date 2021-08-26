@@ -54,9 +54,10 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 30%;
+        width: 20%;
         height: 100%;
         background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+        background-image: linear-gradient(135deg, rgba(255, 207, 244, 0.84) 0%, #764ba2 100%);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -64,6 +65,8 @@
         transition: transform .3s ease-in-out;
         transform: translate(110%);
         box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        font-weight: 300;
+        font-size: 19px;
     }
 
     .spread {
@@ -130,7 +133,7 @@
     /*Projects*/
 
     .projectGallery{
-        background: #f3e5e5;
+        background-image: linear-gradient(to top, rgba(159, 138, 208, 0.25) 0%, hsla(218, 68%, 79%, 0.514) 100%);
     }
     .container-project{
         display: flex;
