@@ -9,7 +9,13 @@
 
     body {
         font-family: 'Lato', sans-serif;
+        transition: background 0.2s linear;
     }
+
+    body.dark{
+        background-color: #292c35;
+    }
+
     .container {
         width: 90%;
         max-width: 1200px;
@@ -38,6 +44,54 @@
         color: #fff;
     }
 
+
+    /*Modo light and night*/
+
+    .label{
+        background-color: #111;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+        padding: 5px;
+        height: 26px;
+        width: 50px;
+        position: fixed;
+    }
+
+    .ball{
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        /*Permite que el desplazamiento sea más lento*/
+        transition: transform 0.2s linear;
+    }
+
+    .fa-moon{
+        color: #9f8ad0;
+    }
+    .fa-sun{
+        color: rgba(252, 230, 243, 0.83);
+    }
+
+    .checkbox{
+        opacity: 0;
+        position: absolute;
+    }
+
+    .checkbox:checked + .label .ball{
+        /*Los métodos translateX y translateY
+    Desplaza el elemento a lo largo del eje X (horizontal). transform: translateY(20px); Desplaza el elemento a lo largo del eje Y (vertical).
+        Es lo que permitirá que al dar click se desplace el "ball"
+    */
+        transform: translateX(24px);
+    }
+
+     /*Menu*/
     .menu {
         position: fixed;
         top: 30px;
@@ -174,7 +228,6 @@
         margin: auto;
 
     }
-
 
     /*Footer*/
 

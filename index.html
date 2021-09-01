@@ -10,10 +10,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header class="header" id="home">
+
+        <div>
+            <input type="checkbox" class="checkbox" id="checkbox" ></input>
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+
         <img alt="Menú Navegación" class="menu" src="/img/menu.svg">
         <!--Menú navegación-->
         <nav class="menu-navegation">
@@ -24,6 +35,8 @@
             <a href="#skills">Habilidades</a>
             <a href="#contactMe">Contacto</a>
         </nav>
+        
+
         <div class="container head">
             <h1 class="title">Hola mundo! I'm {Pamela}</h1>
             <p class="text">Ingeniera electrónica,  futura dev...</p>
@@ -34,6 +47,7 @@
 
     <!--Todo el contenido principal irá dentro-->
     <main>
+
         <section class="aboutMe container" id="aboutMe">
             <h2 class="subtitle">Acerca de mí</h2>
             <div class="container-aboutMe">
@@ -42,8 +56,8 @@
                     <p class="text-large">
                         ¡Hola! Soy Pame, mi familización con el mundo de la tecnología me ha permitido ver la gran necesidad de conexión de las personas
                         con el mundo digital. Esto acompañado de mi entusiasmo y curiosidad me ha impulsado a
-                        dar un paso más allá e interesarme por la programación web, empezando así con el reto de autoaprendizaje de HTML, CSS y JAVASCRIPT.
-                        Mi próximo reto es desarrollar más proyectos y vivir de cerca el mundo profesional como desarrolladora front-end.
+                        dar un paso más allá e interesarme por la programación web, empezando así con el reto de autoaprendizaje de HTML, CSS y JAVASCRIPT con TeachT3ch.
+                        Mi próximo reto es desarrollar más proyectos y poder vivir más de cerca el mundo profesional como desarrolladora Front-End.
                     </p>
 
                 </div>
@@ -97,22 +111,22 @@
                <br>
                 <p>Puedes contactar conmigo mediante mis redes sociales o descarga directamente mi CV.</p>
                 <a href="/filePam/CV%20Pamela%20Gusqui.pdf" download="How-to-download-file.pdf">
-                    <button class="download-file">Descargar CV</button>
+                    <button class="download-file" target="_blank"  >Descargar CV</button>
                 </a>
             </div>
         </div>
         <div class="social-media">
-            <a href="./img" class="social-media-icon">
+            <a href="mailto:pamegumach@gmail.com" target="_blank"  class="social-media-icon">
                 <img clas="bxl-mail" src="/img/mail.svg" alt="e-Mail">
             </a>
-            <a href="./img" class="social-media-icon">
+            <a href="https://www.linkedin.com/in/pamela-gusqui-582945203/" target="_blank" class="social-media-icon">
                 <img clas="bxl-linkedin" src="/img/linkedin.svg" alt="Linkedin">
             </a>
-            <a href="./img" class="social-media-icon">
+            <a href="https://twitter.com/pamgumach" target="_blank"  class="social-media-icon">
                 <img clas="bxl-Twitter" src="/img/twitter.svg" alt="Twitter">
             </a>
-            <a href="./img" class="social-media-icon">
-                <img clas="bxl-Telegram" src="/img/telegram.svg" alt="Telegram">
+            <a href="https://github.com/pamgumach" target="_blank"  class="social-media-icon">
+                <img clas="bxl-Github" src="/img/bxl-github.svg" alt="GitHub">
             </a>
 
         </div>
@@ -121,6 +135,7 @@
 
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/light-nightMode.js"></script>
 </body>
 
 </html>
